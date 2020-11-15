@@ -1,0 +1,123 @@
+header {
+    text-align: center;
+}
+section {
+    background-color: #efefef;
+    border-top: 5px solid #BFBFBF;
+    height: 89vh;
+}
+.main-container {
+     display: flex;
+ }
+.right-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.left-container {
+    width: 80%;
+}
+.number-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 70vh;
+
+  }
+.number-container > div {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.number-list-3,
+.number-list-5,
+.number-list-9 {
+    background: #2f454e;
+}
+.number-list-2,
+.number-list-4 {
+    background: #2b8ead;
+}
+.number-list-1,
+.number-list-8 {
+    background: #6f98a8;
+}
+.number-list-6,
+.number-list-7 {
+    background: #bfbfbf;
+}
+
+button {
+    background-color: #72C3DC;
+    border-radius: 5%;
+    margin: 5%;
+    padding: 18px;
+    border: none;
+    width: 150px;
+    color: #fff;
+    box-shadow: 1px 5px #888888;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.credit-section {
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+
+@media screen and (max-width: 800px) {
+     body{
+         background-color: #ffffff;
+     }
+     .main-container {
+        flex-direction: column-reverse;
+     }
+     section {
+        background-color: #ffffff;
+        border-top: none;
+     }
+     .right-container {
+        justify-content: center;
+        flex-direction: row;
+
+     }
+     .left-container {
+        width: 100%;
+     }
+     .number-container {
+         grid-template-columns: auto;
+     }
+     .number-container > div {
+        background-color: lightgrey;
+        padding: 4px;
+        text-align: center;
+        color: #333333;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1%;
+     }
+
+    .number-list-3,
+    .number-list-5,
+    .number-list-9 {
+        border-left: 10px solid #2f454e;
+    }
+    .number-list-2,
+    .number-list-4 {
+        border-left: 10px solid #2b8ead;
+    }
+    .number-list-1,
+    .number-list-8 {
+        border-left: 10px solid #6f98a8;
+    }
+    .number-list-6,
+    .number-list-7 {
+        border-left: 10px solid #bfbfbf;
+    }
+
+}
