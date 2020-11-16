@@ -70,7 +70,7 @@ button {
     padding: 3% 0 3% 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 375px) {
      body{
          background-color: #ffffff;
      }
